@@ -92,8 +92,6 @@ correr el comando:
 ```python
 docker-compose up --build
 ```
-2. Ingresar a la URL del cahtbot:
-```HTTP
-http://localhost:8501
-```
-[![chatbot.jpg](https://i.postimg.cc/sXhLd8DP/chatbot.jpg)](https://postimg.cc/BLJp2mFt)
+## 9. Requisitos maquina:
+El modelo corre con 40GB de disco y se requiere una memoria de 32GB, debido a lo robusto del mismo.
+
