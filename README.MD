@@ -95,9 +95,9 @@ correr el comando:
 ```python
 docker-compose up --build
 ```
-2. En caso de que no se cuenten con suficientes recursos máquina, se puede modificar o
+2. En caso de que no se tengan suficientes recursos máquina, se puede modificar o
 crear un segundo docker compose en donde se llamen los nombres de las imágenes y
-se haga build a todas las imágenes a la vez::
+se haga build a todas las imágenes a la vez:
 Ejecución de varias imagenes en Docker.
 [![compose-2.jpg](https://i.postimg.cc/Vv69j0rp/compose-2.jpg)](https://postimg.cc/0MTJvQC0)
 
