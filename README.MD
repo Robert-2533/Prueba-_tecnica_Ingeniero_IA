@@ -45,7 +45,7 @@ La agenda se almacena en un archivo `agenda.xlsx`, el cual funciona como una bas
 Arquitectura basada en microservicios orquestados con Docker Compose:
 
 Usuario → Streamlit → LangChain → FastAPI → Excel
-https://github.com/Robert-2533/Prueba-_tecnica_Ingeniero_IA/issues/1#issue-3765878738
+
 ---
 
 ## 5. Componentes
