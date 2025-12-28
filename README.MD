@@ -92,8 +92,7 @@ correr el comando:
 ```python
 docker-compose up --build
 ```
-2. Ingresar a la URL del cahtbot
-correr el comando:
+2. Ingresar a la URL del cahtbot:
 ```HTTP
 http://localhost:8501
 ```
