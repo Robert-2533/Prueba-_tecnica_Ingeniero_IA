@@ -45,7 +45,7 @@ La agenda se almacena en un archivo `agenda.xlsx`, el cual funciona como una bas
 Arquitectura basada en microservicios orquestados con Docker Compose:
 
 Usuario → Streamlit → LangChain → FastAPI → Excel
-
+[![arquitectura-chatbot.jpg](https://i.postimg.cc/NjqcP6sm/arquitectura-chatbot.jpg)](https://postimg.cc/xcRhXbb1)
 ---
 
 ## 5. Componentes
