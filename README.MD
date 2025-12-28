@@ -85,13 +85,19 @@ Todos los servicios se ejecutan en contenedores separados, facilitando despliegu
 5. Se responde al usuario con una cadena de respuesta en LangChain.
 
 ---
+## 8. Requisitos maquina:
+El modelo corre con 40GB de disco y se requiere una memoria de 32GB, debido a lo robusto del mismo.
 
-## 8. Ejecución
+
+## 9. Ejecución
 1. Ingresar a la carpeta streamlit_ui_chatbot allí
 correr el comando:
 ```python
 docker-compose up --build
 ```
-## 9. Requisitos maquina:
-El modelo corre con 40GB de disco y se requiere una memoria de 32GB, debido a lo robusto del mismo.
+2. En caso de que no se tenga suficientes recursos maquina, se puede modificar o
+crear un segundo docker compose en donde se llamen los nombres de las imagenes y
+se haga build a todas las imagenes a la vez:
+Ejecución de varias imagenes en Docker.
+[![compose-2.jpg](https://i.postimg.cc/Vv69j0rp/compose-2.jpg)](https://postimg.cc/0MTJvQC0)
 
