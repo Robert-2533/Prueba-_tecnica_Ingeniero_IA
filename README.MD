@@ -80,15 +80,20 @@ Todos los servicios se ejecutan en contenedores separados, facilitando despliegu
 
 1. Usuario escribe solicitud.
 2. Streamlit envía a LangChain.
-3. LangChain consulta al LLM.
+3. LangChain consulta al agente LLM.
 4. Se ejecuta el endpoint correspondiente.
-5. Se responde al usuario.
+5. Se responde al usuario con una cadena de respuesta en LangChain.
 
 ---
 
 ## 8. Ejecución
-Ingresar a la carpeta streamlit_ui_chatbot allí
+1. Ingresar a la carpeta streamlit_ui_chatbot allí
 correr el comando:
 ```python
 docker-compose up --build
+```
+2. Ingresar a la URL del cahtbot
+correr el comando:
+```HTTP
+http://localhost:8501
 ```
