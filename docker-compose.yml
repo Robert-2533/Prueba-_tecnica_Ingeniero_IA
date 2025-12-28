@@ -1,0 +1,52 @@
+#version: "3.3"
+
+services:
+  frontend:
+    build: ./frontend_streamlit
+    container_name: frontend
+    restart: unless-stopped
+    ports:
+      - 8501:8501
+    environment:
+      AGENT_API_URL: ${AGENT_API_URL}
+    networks:
+      - chatbot_net
+
+  backend:
+    build: ./backend
+    container_name: backend
+    restart: unless-stopped
+    volumes:
+      - ./agenda.xlsx:/datos/agenda.xlsx
+    ports:
+      - 54621:54621
+    environment:
+      EXCEL_FILE_NAME: ${EXCEL_FILE_NAME}
+    networks:
+      - chatbot_net
+
+  llm:
+    build: ./llm
+    container_name: llm
+    restart: unless-stopped
+    environment:
+      FRONT_PORT: ${FRONTEND_PORT}
+    networks:
+      - chatbot_net
+
+  langchain_agent:
+    build: ./langchain_agent
+    container_name: langchain_agent
+    restart: unless-stopped
+    environment:
+      BACKEND_URL: ${AGENT_BACKEND_URL}
+      LLM_NAME: ${LLM_NAME}
+      LLM_URL: ${LLM_URL}
+    networks:
+      - chatbot_net
+    ports:
+      - 8000:8000
+
+networks:
+  chatbot_net:
+    driver: bridge
