@@ -1,0 +1,11 @@
+prioridad alta
+borrar eventos
+
+prioridad media:
+3. Documentar
+4. Volver a poner build en docker-compose
+5. validar que todo sirva con el comando docker-compose up --build
+
+
+opcionales
+1. Logging en el backend y guardar logs

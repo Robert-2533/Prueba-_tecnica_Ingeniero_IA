@@ -1,0 +1,9 @@
+langchain
+langchain-core
+langchain-ollama
+langserve[server]
+langchain-community
+langgraph
+fastapi
+uvicorn
+sse-starlette
